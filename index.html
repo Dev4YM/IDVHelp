@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="ltr" lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS Files -->
+  <link href="main.css" rel="stylesheet" /><!-- Main -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/><!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- FontAwesome -->
+  <!-- Page Title -->
+  <title>Text to CODE</title>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <svg class="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#000"></stop>
+        <stop offset="100%" stop-color="#fff"></stop>
+      </linearGradient>
+      <mask id="mask1">
+        <rect x="0" y="0" width="160" height="160" fill="url(#grad)"></rect>
+      </mask>
+      <mask id="mask2">
+        <rect x="28" y="28" width="104" height="104" fill="url(#grad)"></rect>
+      </mask>
+    </defs>
+    
+    <g>
+      <g class="pl__ring-rotate">
+        <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(223,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+      </g>
+    </g>
+    <g mask="url(#mask1)">
+      <g class="pl__ring-rotate">
+        <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(193,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
+      </g>
+    </g>
+    
+    <g>
+      <g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+        <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+      </g>
+    </g>
+    <g mask="url(#mask1)">
+      <g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
+        <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-90,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(-45,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(0,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(45,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(90,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(135,0,0) translate(0,40)"></polyline>
+        <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
+      </g>
+    </g>
+    
+    <g>
+      <g transform="translate(64,28)">
+        <g class="pl__arrows" transform="rotate(45,16,52)">
+          <path fill="hsl(3,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+          <path fill="hsl(223,10%,90%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+        </g>
+      </g>
+    </g>
+    <g mask="url(#mask2)">
+      <g transform="translate(64,28)">
+        <g class="pl__arrows" transform="rotate(45,16,52)">
+          <path fill="hsl(333,90%,55%)" d="M17.998,1.506l13.892,43.594c.455,1.426-.56,2.899-1.998,2.899H2.108c-1.437,0-2.452-1.473-1.998-2.899L14.002,1.506c.64-2.008,3.356-2.008,3.996,0Z"></path>
+          <path fill="hsl(223,90%,80%)" d="M14.009,102.499L.109,58.889c-.453-1.421,.559-2.889,1.991-2.889H29.899c1.433,0,2.444,1.468,1.991,2.889l-13.899,43.61c-.638,2.001-3.345,2.001-3.983,0Z"></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+  <!-- Preloader -->
+  <!-- Page Content -->
+  <div id="page">
+    <div id="mainForm" class="container bg-body rounded shadow mt-2 py-3 px-4">
+      <div class="row overflow-hidden">
+        <form class="col-md-6 pe-5 h-100 overflow-auto" id="textForm">
+          <p class="h4">Prompt:</p>
+          <textarea class="form-control" id="inputText" rows="6" cols="50" dir="rtl">test: test</textarea>
+          <div class="form-check my-2">
+            <input class="p-2 form-check-input option2" type="checkbox" id="bElementCheckbox"
+              name="bElementCheckbox" />
+            <label class="form-check-label option2" for="bElementCheckbox">Wrap each title with
+              &lt;b&gt;
+              element</label>
+          </div>
+          <div class="form-check my-2">
+            <input class="p-2 form-check-input option2" type="checkbox" id="spanCheckbox"
+              name="spanCheckbox" />
+            <label class="form-check-label option2" for="spanCheckbox">Wrap remaining text with
+              &lt;span&gt;
+              element</label>
+          </div>
+          <p class="h5 mt-4">List Type: </p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="listTypeRadio" id="olRadio" checked />
+            <label style="cursor: pointer" class="form-check-label" for="olRadio">ordered list</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="listTypeRadio" id="ulRadio" />
+            <label style="cursor: pointer" class="form-check-label" for="ulRadio">unordered list</label>
+          </div>
+          <button class="mt-4 btn btn-primary w-100" type="button" onclick="GenerateCode()">
+            Generate Code
+          </button>
+        </form>
+        <div class="col-md-6 p-3 rounded bg-light text-secondary help-side h-100 overflow-auto">
+          <p class="h4"><i class="fa-solid fa-circle-info pe-2"></i>Help</p>
+          <div id="Help1" class="p-2">
+            <p class="lead">Coming Soon...</p>
+            <p class="description">
+              Coming Soon...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="Code-header py-2">
+          <p class="h4">Generated Code:</p>
+          <div id="copyAlert" class="alert alert-success d-none" role="alert">
+            Code copied to your clipboard Successfully!
+          </div>
+          <button id="copyButton" class="float-end btn btn-m btn-outline btn-outline-primary d-none"
+            onclick="copyOutput()">
+            <i class="pe-2 fa-solid fa-clipboard"></i>Copy Code
+          </button>
+        </div>
+        <div class="CodeBox bg-light text-secondary text-start px-5 py-4 rounded">
+          <pre><code dir="ltr" id="output"></code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Content -->
+
+  <!-- JS Files -->
+  <script src="main.js"></script><!-- Main -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script><!-- Bootstrap -->
+</body>
+</html>
