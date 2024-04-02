@@ -39,13 +39,12 @@ body {
   right: auto;
 }
 
-.Code-header p,
-.Code-header button {
-  display: inline-block;
+.Code-header {
+  height: 65px;
 }
 
 .CodeBox {
-  height: 280px;
+  height: 270px;
   overflow: auto;
 }
 
@@ -97,10 +96,39 @@ body {
   }
 
   .CodeBox {
-    height: 325px;
+    height: 315px;
   }
 }
 
+@media screen and (max-width: 1746px) {
+  #mainForm {
+    max-width: 1300px;
+    font-size: 16px;
+  }
+
+  .row:nth-child(1) {
+    height: 450px;
+  }
+
+  .CodeBox {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  #mainForm {
+    max-width: 1700px;
+    font-size: 20px;
+  }
+
+  .row:nth-child(1) {
+    height: 550px;
+  }
+
+  .CodeBox {
+    height: 380px;
+  }
+}
 
 .pl {
   display: block;
@@ -215,4 +243,137 @@ body {
 	36% {
     stroke-dashoffset: 0;
   }
+}
+
+.customBTN {
+  border: none;
+  height: 3rem;
+  border-radius: 3em !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1C1A1C !important;
+  transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+  width: 19px;
+  height: 19px;
+}
+
+.text {
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: medium;
+}
+
+.customBTN:hover {
+  background: linear-gradient(0deg,#A47CF3,#683FEA) !important;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 10px 0px #9917FF;
+}
+
+.customBTN:hover .text {
+  color: white;
+}
+
+.customBTN:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}
+
+.CodeBox {
+  width: 190px;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #000, #272727);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+
+.cssbuttons-io-button {
+  background: #a370f0;
+  color: white;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon i {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon i {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
 }
