@@ -85,21 +85,6 @@ body {
   }
 }
 
-@media screen and (min-width: 2133px) {
-  #mainForm {
-    max-width: 1500px;
-    font-size: 22px;
-  }
-
-  .row:nth-child(1) {
-    height: 500px;
-  }
-
-  .CodeBox {
-    height: 315px;
-  }
-}
-
 @media screen and (max-width: 1746px) {
   #mainForm {
     max-width: 1300px;
