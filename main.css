@@ -117,16 +117,16 @@ body {
 
 @media screen and (min-width: 4480px) {
   #mainForm {
-    max-width: 1700px;
-    font-size: 20px;
+    max-width: 2900px;
+    font-size: 34px;
   }
 
   .row:nth-child(1) {
-    height: 550px;
+    height: 1000px;
   }
 
   .CodeBox {
-    height: 380px;
+    height: 1000px;
   }
 }
 
