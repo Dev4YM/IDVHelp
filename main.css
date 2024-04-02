@@ -122,11 +122,11 @@ body {
   }
 
   .row:nth-child(1) {
-    height: 1000px;
+    height: 1200px;
   }
 
   .CodeBox {
-    height: 1000px;
+    height: 1200px;
   }
 }
 
