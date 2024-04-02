@@ -6,7 +6,7 @@ setTimeout(function () {
   preloader.addEventListener("transitionend", function () {
     preloader.classList.add("d-none");
   });
-}, 2000);
+}, 1000);
 
 // Function to handle input event in the textarea
 function handleInput() {
