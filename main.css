@@ -362,3 +362,13 @@ body {
 .cssbuttons-io-button:active .icon {
   transform: scale(0.95);
 }
+
+#blinker {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
