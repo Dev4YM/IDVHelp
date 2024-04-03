@@ -76,7 +76,20 @@ function GenerateCode() {
     : `<ul>\n${formattedText}</ul>`;
 
   let outputElement = document.getElementById("output");
-  outputElement.textContent = checkListType;
+
+  const delay = 1;
+
+  let index = 0;
+
+  function typeWriter() {
+      outputElement.textContent = checkListType.substring(0, index + 1);
+      index++;
+      if (index < checkListType.length) {
+          setTimeout(typeWriter, delay);
+      }
+  }
+
+  typeWriter();
 
   // Show the copy button
   let copyButton = document.getElementById("copyButton");
